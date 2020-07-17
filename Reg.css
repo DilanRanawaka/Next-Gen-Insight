@@ -1,0 +1,43 @@
+body {
+    background-image: url("https://images4.alphacoders.com/113/thumb-350-113576.jpg");
+    background-size: cover;
+}
+
+.sq1 {
+    position: fixed;
+    padding-left: 4cm;
+    padding-top: 1cm;
+}
+
+.sq2 {
+    position: fixed;
+    padding-left: 17.5cm;
+    padding-top: 1cm;
+}
+
+#sqaure1 {
+    background-image: url("yes.jpg");
+    box-shadow: 1px 1px 5px 5px black;
+    background-position: center;
+}
+
+#sqaure2 {
+    box-shadow: 1px 1px 5px 5px black;
+}
+
+#h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.table {
+    padding-left: 18cm;
+    padding-top: 2cm;
+    color: white;
+}
+
+.line {
+    padding-top: 20cm;
+    padding-left: 15cm;
+    position: fixed;
+}
