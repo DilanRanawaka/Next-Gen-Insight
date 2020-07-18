@@ -16,7 +16,7 @@ body {
 }
 
 #sqaure1 {
-    background-image: url("yes.jpg");
+    background-image: url("images/yes.jpg");
     box-shadow: 1px 1px 5px 5px black;
     background-position: center;
 }
