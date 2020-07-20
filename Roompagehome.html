@@ -9,30 +9,108 @@
         </style> -->
         <link rel="stylesheet" type="text/css" href="Roompagehome.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+        <script src="homepage-room.js"></script>
+        
     </head>
     <body>
-        <div style=" background: url(https://wallpapercave.com/wp/wp3176613.jpg) no-repeat center center fixed; -webkit-background-size: cover;>
+        
     
+    <div class="container0">
+        <div class="header">
+            <h1>ROOMS</h1>
+        </div>
+
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+            <img src="room1.jpg" style="width:100%" >
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+            <img src="room22.jpg" style="width:100%" >
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+            <img src="room33.jpg" style="width:100%" >
+        </div>
+    
+        <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+            <img src="room44.jpg" style="width:100%" >
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img src="room55.jpg" style="width:100%" >
+        </div>
+        <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img src="room66.jpg" style="width:100%" class="center">
+        </div>
+    
+        
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+
+          </div>
+    
+        <!-- Image text -->
+        <div class="caption-container">
+        <p id="caption"></p>
+        </div>
+    
+        <!-- Thumbnail images -->
+        <div class="row">
+        <div class="column">
+            <img class="demo cursor" src="room1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Single room">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="room22.jpg" style="width:100%" onclick="currentSlide(2)" alt="Double room">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="room33.jpg" style="width:100%" onclick="currentSlide(3)" alt="Triple room">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="room44.jpg" style="width:100%" onclick="currentSlide(4)" alt="Queen room">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="room55.jpg" style="width:100%" onclick="currentSlide(5)" alt="Balcony">
+        </div>
+        <div class="column">
+            <img class="demo cursor" src="room66.jpg" style="width:100%" onclick="currentSlide(6)" alt="Bathroom">
+        </div>
+        </div>
+    </div>
+   
 <selection id="roomprice">
     <div class="container">
-        <h1>Rooms</h1>
         <div class="row">
             <div class="col-md-3">
                 <div class="single-price">
                     <div class="price-head">
                         <h2>Single Room</h2>
-                        <p>Rs.5000.00 <span> per day</span></p>
+                        <p>$27<span>per day</span></p>
                         <img src="room1.jpg"  class="img-thumbnail" width="100%">
                         
                     </div>
                     <div class="price-content">
                         <ul>
-                            <li>Single person room</li>
-                            <li>1 Bed</li>
+                            <li>Single Bed</li>
+                            <li>Balcony</li>
                             <li>1 Bathroom</li>
-                            <li>1 Balcony</li>
+                            <li>Air conditioned</li>
                             <li>1 Television</li>
-                            <li>Single sofa</li>
+                            <li>Mini Bar Cabinet</li>
                         </ul>
                     </div>
                     <div class="price-button">
@@ -46,18 +124,19 @@
             <div class="col-md-3">
                 <div class="single-price">
                     <div class="price-head">
-                        <h2>Double Room</h2>
-                        <p>Rs.10000.00 <span> per day</span></p>
+                        <h2>Twin Room</h2>
+                        <p>$54<span> per day</span></p>
                         <img src="room22.jpg"  class="img-thumbnail" width="100%">
                         
                     </div>
                     <div class="price-content">
                         <ul>
-                            <li>Single person room</li>
+                            
                             <li>2 Beds</li>
                             <li>1 Bathroom</li>
-                            <li>1 Balcony</li>
-                            <li>1 Television</li>
+                            <li>Balcony</li>
+                            <li>Air conditioned</li>
+                            <li>Television</li>
                             <li>Mini fridge</li>
                         </ul>
                     </div>
@@ -73,16 +152,17 @@
                 <div class="single-price">
                     <div class="price-head">
                         <h2>Triple Room</h2>
-                        <p>Rs.15000.00 <span> per day</span></p>
+                        <p>$81<span> per day</span></p>
                         <img src="room33.jpg"  class="img-thumbnail" width="100%">
                         
                     </div>
                     <div class="price-content">
                         <ul>
-                            <li>Single person room</li>
+                           
                             <li>3 Beds</li>
                             <li>2 Bathrooms</li>
                             <li>2 Balconies</li>
+                            <li>Air conditioned</li>
                             <li>1 Television</li>
                             <li>Mini fridge</li>
                         </ul>
@@ -98,7 +178,7 @@
                 <div class="single-price">
                     <div class="price-head">
                         <h2>Queen Room</h2>
-                        <p>Rs.25000.00 <span> per day</span></p>
+                        <p>$135<span> per day</span></p>
                         <img src="room44.jpg"  class="img-thumbnail" width="100%">
                         
                     </div>
@@ -106,10 +186,10 @@
                         <ul>
                             <li>King Size bed</li>
                             <li>Mini fridge</li>
-                            <li>Bathroom with hot bath tub</li>
+                            <li>Bathroom with bath tub</li>
                             <li>Balcony with sea view</li>
-                            </li>Smart Television</li>
-                            <li>Large sofa</li>
+                            <li>Smart Television</li>
+                            <li>Kitchen</li>
                         </ul>
                     </div>
                     <div class="price-button">
@@ -119,9 +199,9 @@
                 </div>
 
 
+            </div>
         </div>
     </div>
-
 </selection>
 
         
