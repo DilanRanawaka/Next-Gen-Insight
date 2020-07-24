@@ -1,0 +1,112 @@
+body {
+    background-image: url("https://images4.alphacoders.com/113/thumb-350-113576.jpg");
+    background-size: cover;
+}
+
+.sq1 {
+    position: absolute;
+    padding-top: 3cm;
+    padding-left: 22cm;
+}
+
+#sqaure1 {
+    position: fixed;
+    transform-origin: center;
+    background-color: white;
+    border-radius: 5px 1px 1px 5px;
+}
+
+.el {
+    position: fixed;
+    transform: rotateZ(90deg);
+}
+
+ellipse {
+    position: fixed;
+    transform-origin: center;
+}
+
+#txt {
+    color: black;
+    text-align: center;
+    position: fixed;
+    padding-top: 4cm;
+    padding-left: 10cm;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#row1 {
+    position: fixed;
+    padding-top: 7cm;
+    padding-left: 8cm;
+}
+
+#row2 {
+    position: fixed;
+    padding-top: 9cm;
+    padding-left: 8cm;
+}
+
+#row3 {
+    position: fixed;
+    padding-top: 11cm;
+    padding-left: 11cm;
+}
+
+#emailbox {
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 810px;
+    padding-top: 8px;
+    padding-left: 1cm;
+    width: 300px;
+    height: 30px;
+}
+
+#pwbox {
+    font-weight: bolder;
+    font-size: large;
+    padding-left: 810px;
+    padding-top: 8px;
+    padding-left: 1cm;
+    width: 300px;
+    height: 30px;
+}
+
+#log {
+    font-weight: bolder;
+    font-size: large;
+    border-radius: 20%;
+    font-family: 'Times New Roman', Times, serif;
+    width: 3cm;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
+
+#log:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}
+
+.table {
+    padding-left: 15cm;
+    padding-top: 1cm;
+}
+
+.h1 {
+    padding-left: 6cm;
+    padding-top: 1cm;
+    color: white;
+}
+
+#heading1 {
+    font-size: 50px;
+}
+
+#text {
+    font-size: 20px;
+}
