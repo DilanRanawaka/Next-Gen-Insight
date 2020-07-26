@@ -1,72 +1,197 @@
 body {
-    background-image: url("https://images4.alphacoders.com/113/thumb-350-113576.jpg");
+    background-image: url("https://www.jetwinghotels.com/jetwingblue/wp-content/uploads/sites/26/2018/02/Main-1742X871.jpg");
     background-size: cover;
-}
-
-.sq1 {
-    position: fixed;
-    padding-left: 4.5cm;
-    padding-top: 1cm;
 }
 
 .sq2 {
     position: fixed;
-    padding-left: 17.6cm;
+    padding-left: 1cm;
     padding-top: 1cm;
-}
-
-#sqaure1 {
-    background-image: url("yes.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
 }
 
 #sqaure2 {
     background-color: white;
+    opacity: 0.3;
 }
 
 #h1 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-.table {
-    position: fixed;
-    padding-left: 18cm;
-    padding-top: 2cm;
     color: black;
+    font-size: 48px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 1;
 }
 
-.line {
-    padding-top: 20cm;
-    padding-left: 15cm;
+#row1 {
     position: fixed;
+    padding-top: 2cm;
+    padding-left: 3cm;
+}
+
+#fname {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    opacity: 1;
+}
+
+#lname {
+    padding-left: 8cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
 }
 
 #row2 {
-    font-size: 20px;
+    position: fixed;
+    padding-top: 4cm;
+    padding-left: 3cm;
 }
 
-#row3 {
-    font-size: 20px;
+#Ifn {
+    padding-top: 6cm;
+    padding-left: 3cm;
+}
+
+#Iln {
+    padding-top: 6cm;
+    padding-left: 7cm;
+}
+
+#email {
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
+}
+
+#dob {
+    padding-left: 9.5cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
 }
 
 #row4 {
-    font-size: 20px;
+    position: fixed;
+    padding-top: 5px;
+    padding-left: 3cm;
 }
 
-#row5 {
-    font-size: 20px;
+#Iemail {
+    padding-top: 2cm;
+    padding-left: 3cm;
 }
 
-#row6 {
-    font-size: 20px;
+#Idob {
+    padding-top: 2cm;
+    padding-left: 7cm;
 }
 
-#row7 {
-    font-size: 20px;
+#pass {
+    position: fixed;
+    padding-left: 3cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
 }
 
-#row8 {
-    font-size: 20px;
+#num {
+    position: fixed;
+    padding-left: 14.5cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
+}
+
+#Ipass {
+    position: fixed;
+    padding-top: 2cm;
+    padding-left: 3cm;
+}
+
+#code {
+    padding-top: 2cm;
+    padding-left: 7cm;
+}
+
+#Cpass {
+    position: fixed;
+    padding-left: 3cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
+}
+
+#nic {
+    position: fixed;
+    padding-left: 14.5cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 20px;
+    color: black;
+    opacity: 1;
+}
+
+#ICpass {
+    padding-top: 2cm;
+    padding-left: 3cm;
+}
+
+#Inic {
+    padding-top: 2cm;
+    padding-left: 7cm;
+}
+
+#panum {
+    position: fixed;
+    padding-left: 3cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 60px;
+    color: black;
+    opacity: 1;
+}
+
+#country {
+    position: fixed;
+    padding-left: 14.5cm;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 60px;
+    color: black;
+    opacity: 1;
+}
+
+#Ipanum {
+    padding-top: 3cm;
+    padding-left: 3cm;
+}
+
+#Icountry {
+    padding-top: 3cm;
+    padding-left: 7cm;
+}
+
+#h2 {
+    color: black;
+    text-align: justify;
+    text-decoration: underline;
+}
+
+#row9 {
+    padding-left: 3cm;
+    position: fixed;
 }
