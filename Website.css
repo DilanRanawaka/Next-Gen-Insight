@@ -3,3 +3,73 @@ background-color: #99ffff;
 
 
 }
+.nav{
+	
+
+}
+.nav1{
+	
+	float: right;
+}
+
+header{
+	background-color: #55d6aa;
+
+}
+header::after{
+	content: '';
+	display: table;
+	clear: both;
+
+}
+
+}
+nav ul{
+	margin: 1;
+	padding: 0;
+	list-style: none;
+}
+nav li{
+	display: inline-block;
+	margin-left: 70px;
+	position: relative;
+}
+
+.hname{
+ float: left;
+   margin-top:15px;   
+   text-decoration: none;
+	 text-transform: uppercase; 
+	 color: black;
+	 padding-left: 10px;
+	 font-size: 20px;
+border-style: solid;
+border-bottom-right-radius: 8px;
+border-top-left-radius: 8px;
+border-spacing: 5px;	
+
+   
+}
+
+
+nav a{
+	color: blue;
+	 text-decoration: none;
+	 text-transform: uppercase;
+}
+nav a:hover{
+	color:red;
+}
+nav a::before{
+content: '';
+display: block;
+height: 5px;
+width: 60px;
+background-color: black; 
+width: 0%
+
+}
+
+nav a:hover::before{
+	width: 100%
+}
