@@ -14,61 +14,45 @@
     <div class="table">
         <form name="form1" action="" method="POST" onsubmit="checkform();">
             <table>
-                <tr id="row1">
+                <tr class="row1">
                     <td id="h1">Register Here</td>
                     <td></td>
                 </tr>
-                <tr id="row2">
-                    <td id="fname">First Name:</td>
-                    <td id="lname">Last Name:</td>
+                <tr class="row2">
+                    <td id="Ifn"><input id="box1" type="text" name="Fname" placeholder="First Name" required></td>
+                    <td id="Iln"><input id="box2" type="text" name="Lname" placeholder="Last Name" required></td>
                 </tr>
-                <tr id="row3">
-                    <td id="Ifn"><input type="text" name="Fname"></td>
-                    <td id="Iln"><input type="text" name="Lname"></td>
+
+                <tr class="row3">
+                    <td id="Iemail"><input id="box3" type="email" name="Email" placeholder="Email Address" required></td>
+                    <td id="Idob"><input id="box4" type="date" name="DOB" required></td>
                 </tr>
-                <tr id="row4">
-                    <td id="email">Email:</td>
-                    <td id="dob">Date of Birth:</td>
+
+                <tr class="row4">
+                    <td id="Ipass"><input id="box5" type="password" name="Pass" placeholder="Password" required></td>
+                    <td id="code"><input id="box6" type="text" name="Phone" placeholder="Contact Number" required></td>
                 </tr>
-                <tr id="row5">
-                    <td id="Iemail"><input type="email" name="Email"></td>
-                    <td id="Idob"><input type="text" name="DOB"></td>
-                </tr>
-                <tr id="row6">
-                    <td id="pass">Password:</td>
-                    <td id="num">Contact Number:</td>
-                </tr>
-                <tr id="row7">
-                    <td id="Ipass"><input type="password" name="Pass"></td>
-                    <td id="code">
-                        <select>
-                            <option>+94</option>
-                            <option></option>
-                        </select><input id="pnum" type="text" name="Phone"></td>
-                </tr>
-                <tr id="row8">
-                    <td id="Cpass">Confirm Password:</td>
-                    <td id="nic">NIC number:</td>
-                </tr>
-                <tr>
-                    <td id="ICpass"><input type="text" name="Nation"></td>
+
+                <tr class="row5">
+                    <td id="ICpass"><input id="box7" type="text" name="Cpass" placeholder="Confirm Password" required></td>
                     <td id="Inic">
-                        <input type="text" name="NIC">
+                        <input id="box8" type="text" name="NIC" placeholder="NIC number" required>
                     </td>
                 </tr>
-                <tr id="row9">
-                    <td id="h2">
+                <tr class="row6">
+                    <td>
                         <p>Foreingers' Only *</p>
                     </td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td id="panum">Passport Number:</td>
-                    <td id="country">Country:</td>
+
+                <tr class="row7">
+                    <td id="Ipanum"><input id="box9" type="text" name="Pnum" placeholder="Passport Number"></td>
+                    <td id="Icountry"><input id="box10" type="text" name="CON" placeholder="Country"></td>
                 </tr>
-                <tr>
-                    <td id="Ipanum"><input type="text" name="Pnum"></td>
-                    <td id="Icountry"><input type="text" name="CON"></td>
+                <tr class="button">
+                    <td></td>
+                    <td><input id="submit" type="submit" value="Sign Up" name="SignUp"></td>
                 </tr>
 </body>
 
