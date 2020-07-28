@@ -3,72 +3,56 @@
 
 <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="css/Reg.css" />
+    <link rel="stylesheet" type="text/css" href="Reg.css" />
 </head>
 
 <body>
-    <div class="sq1">
-        <svg id="sqaure1" width="500" height="670"> 
-        </svg>
-    </div>
     <div class="sq2">
-        <svg id="sqaure2" width="750" height="670"> 
+        <svg id="sqaure2" width="1450" height="680"> 
         </svg>
     </div>
     <div class="table">
         <form name="form1" action="" method="POST" onsubmit="checkform();">
             <table>
-                <tr id="row1">
+                <tr class="row1">
                     <td id="h1">Register Here</td>
                     <td></td>
                 </tr>
-                <tr id="row2">
-                    <td>First Name:</td>
-                    <td>Last Name:</td>
+                <tr class="row2">
+                    <td id="Ifn"><input id="box1" type="text" name="Fname" placeholder="First Name" required></td>
+                    <td id="Iln"><input id="box2" type="text" name="Lname" placeholder="Last Name" required></td>
                 </tr>
-                <tr id="row3">
-                    <td><input type="text" name="Fname"></td>
-                    <td><input type="text" name="Lname"></td>
+
+                <tr class="row3">
+                    <td id="Iemail"><input id="box3" type="email" name="Email" placeholder="Email Address" required></td>
+                    <td id="Idob"><input id="box4" type="date" name="DOB" required></td>
                 </tr>
-                <tr id="row4">
-                    <td>Email:</td>
-                    <td>Date of Birth:</td>
+
+                <tr class="row4">
+                    <td id="Ipass"><input id="box5" type="password" name="Pass" placeholder="Password" required></td>
+                    <td id="code"><input id="box6" type="text" name="Phone" placeholder="Contact Number" required></td>
                 </tr>
-                <tr id="row5">
-                    <td><input type="email" name="Email"></td>
-                    <td><input type="text" name="DOB"></td>
+
+                <tr class="row5">
+                    <td id="ICpass"><input id="box7" type="text" name="Cpass" placeholder="Confirm Password" required></td>
+                    <td id="Inic">
+                        <input id="box8" type="text" name="NIC" placeholder="NIC number" required>
+                    </td>
                 </tr>
-                <tr id="row6">
-                    <td>Password:</td>
-                    <td>Contact Number:</td>
-                </tr>
-                <tr id="row7">
-                    <td><input type="password" name="Pass"></td>
+                <tr class="row6">
                     <td>
-                        <select>
-                            <option>+94</option>
-                            <option></option>
-                        </select><input type="text" name="Phone"></td>
-                </tr>
-                <tr id="row8">
-                    <td>Nationality:</td>
-                    <td>NIC number:</td>
-                </tr>
-                <tr>
-                    <td><input type="text" name="Nation"></td>
-                    <td><input type="text" name="NIC"></td>
-                </tr>
-                <tr>
-                    <td><br><br>Foreigners Only</td>
+                        <p>Foreingers' Only *</p>
+                    </td>
                     <td></td>
                 </tr>
-                <tr>
-                    <td>Passport Number:</td>
-                    <td>Country:</td>
+
+                <tr class="row7">
+                    <td id="Ipanum"><input id="box9" type="text" name="Pnum" placeholder="Passport Number"></td>
+                    <td id="Icountry"><input id="box10" type="text" name="CON" placeholder="Country"></td>
                 </tr>
-                <tr>
-                    <td><input type="text" name="Pnum"></td>
-                    <td><input type="text" name="CON"></td>
+                <tr class="button">
+                    <td></td>
+                    <td><input id="submit" type="submit" value="Sign Up" name="SignUp"></td>
                 </tr>
 </body>
 
