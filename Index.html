@@ -1,55 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sea Side South Park Hotel</title>
+    <title>Sea Side Park</title>
 
-    <link rel="stylesheet" type = "text/css" href="all.css"/>
-    <link rel="stylesheet" type = "text/css" href="homepage.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> -->
+
+
 </head>
-<body>
 
-    <nav class="nav">
-        <div class="nav-menu flex-row">
-            <div class="nav-brand">
-                <a href="#" class="text-gray"> Sea Side South Park </a>
-            </div>
-            <div class="toggle-collapse">
-                <div class="toggle-icons">
-                    <i class= "drop-down"></i>
-                </div>
-            </div>
-                <div>
-                <ul class= "nav-items">
-                    <li class="nav-link">
-                        <a href="#">About Us</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Contact Us</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Rooms</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Hotel Reservation</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Multiple Hotel</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Registration</a>
-                    </li>
-                </ul>
-                </div>
-            <div class="social text-gray">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-            </div>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sea Side Park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="">Rooms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li> -->
+                <li class="nav-button">
+                    <!-- <button type="button" class="btn btn-info">Login</button> -->
+                    <button type="button" class="btn btn-secondary btn-sm">Login</button>
+                </li>
+
+                <li class="nav-button1">
+                    <button type="button" class="btn btn-secondary btn-sm">Sign Up</button>
+                </li>
+
+            </ul>
         </div>
     </nav>
-    
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="images/3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div id="booking" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <div class="booking-form">
+                        <form>
+                            <div class="row no-margin">
+                                <div class="col-md-3">
+                                    <div class="form-header">
+                                        <h2>Book Now</h2>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="row no-margin">
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Check In</span>
+                                                <input class="form-control" type="date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <span class="form-label">Check out</span>
+                                                <input class="form-control" type="date">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <span class="form-label">Guests</span>
+                                                <select class="form-control">
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                    <option>3</option>
+                                                    <option>4</option>
+                                                    <option>5</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <span class="form-label">Kids</span>
+                                                <select class="form-control">
+                                                    <option>0</option>
+                                                    <option>1</option>
+                                                    <option>2</option>
+                                                </select>
+                                                <span class="select-arrow"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="form-btn">
+                                        <button class="submit-btn">Check availability</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About Sea Side Park</h6>
+                    <p class="text-justify">We are............</p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Navigations</h6>
+                    <ul class="footer-links">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Rooms</a></li>
+                        <li><a href="">Failities</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">About Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Social Links</h6>
+                    <ul class="footer-links">
+                        <li><img src="https://img.icons8.com/color/35/000000/facebook-new.png" /></li>
+                        <li><img src="https://img.icons8.com/color/35/000000/instagram-new.png" /></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">
+                        Copyright &copy; 2020 All Rights Reserved by Next Gen Insight
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
