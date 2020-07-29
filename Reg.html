@@ -3,10 +3,12 @@
 
 <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="Reg.css" />
+    <link rel="stylesheet" type="text/css" href="css/Reg.css" />
+    <link language="javascript" type="text/javascript" href="js/Reg.js" />
 </head>
 
 <body>
+
     <div class="sq2">
         <svg id="sqaure2" width="1450" height="680"> 
         </svg>
@@ -25,7 +27,7 @@
 
                 <tr class="row3">
                     <td id="Iemail"><input id="box3" type="email" name="Email" placeholder="Email Address" required></td>
-                    <td id="Idob"><input id="box4" type="date" name="DOB" required></td>
+                    <td id="Idob"><input id="box4" type="date" name="Birth" required></td>
                 </tr>
 
                 <tr class="row4">
@@ -34,9 +36,9 @@
                 </tr>
 
                 <tr class="row5">
-                    <td id="ICpass"><input id="box7" type="text" name="Cpass" placeholder="Confirm Password" required></td>
+                    <td id="ICpass"><input id="box7" type="password" name="Cpass" placeholder="Confirm Password" required></td>
                     <td id="Inic">
-                        <input id="box8" type="text" name="NIC" placeholder="NIC number" required>
+                        <input id="box8" type="text" name="Identity" placeholder="NIC number" required>
                     </td>
                 </tr>
                 <tr class="row6">
@@ -48,7 +50,17 @@
 
                 <tr class="row7">
                     <td id="Ipanum"><input id="box9" type="text" name="Pnum" placeholder="Passport Number"></td>
-                    <td id="Icountry"><input id="box10" type="text" name="CON" placeholder="Country"></td>
+                    <td id="Icountry">
+                        <select id="box10" name="country">
+                            <option>Country</option>
+                            <option>Afghanistan</option><option>Albania</option><option>Algeria</option><option>Andorra</option><option>Angola</option>
+                            <option>Antigua and Barbuda</option><option>Argentina</option><option>Armenia</option><option>Australia</option><option>Austria</option>
+                            <option>Austrian Empire</option><option>Azerbaijan</option>
+                            <option>Baden*</option><option>Bahamas</option><option>Bahrain</option><option>Bangladesh</option><option>Barbados</option><option>Brazil</option>
+                            <option>Bulgaria</option><option>Burma</option><option>Colombia</option><option>Canada</option><option>Denmark</option><option>Egypt</option>
+                            <option>Finland</option><option>France</option><option>Iraq</option><option>Greece</option><option>South Africa</option>                   
+                            <option name="Sri Lanka">Sri Lanka</option><option>United States</option><option>Italy</option>
+                        </select>
                 </tr>
                 <tr class="button">
                     <td></td>
