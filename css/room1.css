@@ -16,34 +16,43 @@
   
   /* Style the header */
   header {
-    background-color: rgb(136, 183, 214);
+    background-image: url(https://i.dlpng.com/static/png/6692436_preview.png);
     padding: 30px;
     text-align: center;
-    font-size: 35px;
+    font-size: 65px;
     color: white;
+    font: outline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   /* Create two columns/boxes that floats next to each other */
   nav {
     float: left;
-    width: 30%;
-    height: 700px; /* only for demonstration, should be removed */
-    background: #ccc;
+    width: 20%;
+    height: 550px; /* only for demonstration, should be removed */
+    background-image: url(https://image.freepik.com/free-vector/watercolor-background-white-blue_1035-6040.jpg);
+   
     padding: 20px;
   }
   
   /* Style the list inside the menu */
   nav ul {
-    list-style-type: none;
+    list-style-type: circle;
     padding: 0;
+  }
+  nav h4{
+    font-style: normal;
+    font-weight: bold;
+    font-family: sans-serif;
+
   }
   
   article {
     float: left;
     padding: 20px;
-    width: 70%;
-    background-color: #f1f1f1;
-    height: 500px; /* only for demonstration, should be removed */
+    width: 80%;
+    background-image: url(https://image.freepik.com/free-vector/watercolor-background-white-blue_1035-6040.jpg);
+    height: 550px; /* only for demonstration, should be removed */
   }
   
   /* Clear floats after the columns */
@@ -54,18 +63,13 @@
   }
   ul{
     list-style-type: circle;
+    
   }
-  /* Style the footer */
-  footer {
-    background-color: #777;
-    padding: 10px;
-    text-align: center;
-    color: white;
-    height: 500px;
-  }
-  
+.slide{
+ size: 700px;
+}
   /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     nav, article {
       width: 100%;
       height: auto;
