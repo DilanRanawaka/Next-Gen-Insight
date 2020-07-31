@@ -2,6 +2,21 @@
 * {
     box-sizing: border-box;
   }
+
+  .bg {
+    /* The image used */
+    background-image: url("https://image.freepik.com/free-photo/blurred-hotel-reception_1203-2099.jpg");
+  
+    /* Half height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
   
   /* Position the image container (needed to position the left and right arrows) */
   .container0 {
@@ -130,8 +145,7 @@
     opacity: 1;
   }
 body{
-    background-color: rgb(72, 123, 170);
-    color:rebeccapurple;
+    
    
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
@@ -156,7 +170,7 @@ body{
     display: inline;
     float: left;
     width: 100%;
-    background-color: rgb(187, 187, 216);
+    background-color: #bbac8f;
     transition: 0.5s;
 }
 .single-price:hover{
@@ -164,7 +178,7 @@ body{
 }
 .price-head
 {
-    background-color: rgb(37, 31, 85);
+    background-color: #645e50;
     display: inline;
     float: left;
     padding: 10px 5px;
@@ -196,9 +210,13 @@ body{
     float: center;
     display: inline;
 }
+#roomprice{
+  color: #0e0d0d;
+}
 #roomprice span
 {
     font-size: 10px;
+    color: #efefef;
 }
 
 .price-content
@@ -207,12 +225,13 @@ body{
     float: left;
     width: 100%;
     padding: 0 15px;
+    
    
   
 }
 .price-content ul li
 {
-    border-bottom: 1px solid #ada9a9;
+    border-bottom: 1px solid #c9c5bd;
     padding: 8px 10px;
     list-style: none;
 
@@ -232,21 +251,23 @@ ul li:last-child
 }
 .buy-button
 {
-    background-color: rgb(17, 46, 83);
+    background-color: #524d42;
     border-radius: 3px;
     display: inline-block;
     font-size: 18px;
     padding: 15px 50px;
     transition: 0.5s;
+    color: rgb(247, 245, 245);
 }
 .buy-button:hover
 {
-    border-color: 1px solid darkblue;
+    border-color: 1px solid rgb(15, 15, 17);
     background-color: whitesmoke;
+    color: rgb(82, 59, 10);
 }
 a
 {
 
     text-decoration: none;
-    color: darkblue;
+    color: rgb(13, 13, 15);
 }
