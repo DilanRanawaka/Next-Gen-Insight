@@ -11,7 +11,7 @@ body {
 
 #sqaure2 {
     background-color: white;
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 #h1 {
@@ -24,45 +24,45 @@ body {
 
 .row1 {
     position: fixed;
-    padding-top: 3cm;
+    padding-top: 2cm;
     padding-left: 3cm;
 }
 
 .row2 {
     position: fixed;
-    padding-top: 6cm;
+    padding-top: 5cm;
     padding-left: 1cm;
 }
 
 .row3 {
     position: fixed;
-    padding-top: 8cm;
+    padding-top: 7cm;
     padding-left: 1cm;
 }
 
 .row4 {
     position: fixed;
-    padding-top: 10cm;
+    padding-top: 9cm;
     padding-left: 1cm;
 }
 
 .row5 {
     position: fixed;
-    padding-top: 12cm;
+    padding-top: 11cm;
     padding-left: 1cm;
 }
 
 .row6 {
     color: white;
     position: fixed;
-    padding-top: 13.5cm;
+    padding-top: 12cm;
     padding-left: 3cm;
     font-weight: bold;
 }
 
 .row7 {
     position: fixed;
-    padding-top: 15cm;
+    padding-top: 14cm;
     padding-left: 1cm;
 }
 
@@ -198,7 +198,7 @@ body {
 
 .button {
     position: fixed;
-    padding-top: 17cm;
+    padding-top: 16cm;
     padding-left: 16cm;
 }
 
@@ -216,4 +216,46 @@ body {
     width: 210px;
     padding: 12px;
     cursor: pointer;
+}
+
+#head {
+    position: fixed;
+    padding-left: 27cm;
+    padding-top: 4cm;
+    font-family: "BodoniStd-BookItalic, serif";
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
+
+#body1 {
+    position: fixed;
+    padding-left: 27cm;
+    padding-top: 6.5cm;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#body2 {
+    position: fixed;
+    padding-left: 26cm;
+    padding-top: 9cm;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#body3 {
+    position: fixed;
+    padding-left: 25cm;
+    padding-top: 11cm;
+    text-align: justify;
+    font-size: 18px;
+}
+
+#body4 {
+    position: fixed;
+    padding-left: 24cm;
+    padding-top: 13cm;
+    text-align: justify;
+    font-size: 18px;
 }

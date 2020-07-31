@@ -1,44 +1,46 @@
 .name{
-    font-family: "Vivaldi, Helvetica, sans-serif" !important;
-    font-weight: bold !important;
+    /* font-family: "Vivaldi, Helvetica, sans-serif" !important; */
+    /* font-weight: bold !important; */
     color: black !important;
-    font-size: x-large !important;
+    font-size: 2rem !important;
    
 }
 .navbar{
-    background-image: url(https://ak.picdn.net/shutterstock/videos/22876729/thumb/1.jpg) !important;
+    /* background-image: url(https://ak.picdn.net/shutterstock/videos/22876729/thumb/1.jpg) !important; */
     background-blend-mode: darken;
     -webkit-flow-into: initial;
+    background-color: seashell;
 }
+
 .btnLogin{
     margin-right: 8px;
-    background-color: black !important;
-    border: rgb(68, 67, 67) !important;
-    
+    background-color: #44bec7 !important;
+    border: rgb(68, 67, 67) !important;   
 }
+
 .btnSignup{
-    background-color: rgb(44, 39, 44) !important;
+    background-color: #737373 !important;
     border: black !important;
 }
-.list{
-   
-    
+
+.list{   
 border-inline-start-style: solid;
 border-inline-end-style: solid;
 border-color: rgb(134, 134, 134);
-    margin: 1px;
-    color: #000;
-   
-    
-    
+margin: 1px;
+color: #000; 
 }
+
 .box{width: 988px;
     float: right;
 }
-.box ul li a{text-decoration:none  ;
-    color:rgb(0, 0, 0) !important;
+
+.box ul li a{
+    font-size: 1.1rem;
+    /* text-decoration:none  ; */
+    /* color:rgb(0, 0, 0) !important; */
 }
 
-.box ul li:hover{background-color:white;}
+/* .box ul li:hover{background-color:white;} */
             
-.box ul li a:hover{color: white;}
+/* .box ul li a:hover{color: white;} */
