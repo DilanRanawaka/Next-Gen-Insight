@@ -4,7 +4,7 @@ body {
 }
 
 .sq1 {
-    position: absolute;
+    position: fixed;
     padding-top: 3.5cm;
     padding-left: 6cm;
 }
@@ -16,49 +16,51 @@ body {
     box-shadow: 1px 1px 5px 5px black;
 }
 
+.email {
+    position: fixed;
+    padding-top: 8.5cm;
+    padding-left: 7.5cm;
+}
+
+.pass {
+    position: fixed;
+    padding-top: 10.5cm;
+    padding-left: 7.5cm;
+}
+
+.submit {
+    position: fixed;
+    padding-top: 13cm;
+    padding-left: 11cm;
+}
+
 #txt {
     color: white;
     text-align: center;
     position: fixed;
-    padding-top: 4cm;
-    padding-left: 4cm;
-    font-size: 40px;
+    padding-top: 5cm;
+    padding-left: 9.5cm;
+    font-size: 48px;
     font-weight: bold;
     font-family: 'Times New Roman', Times, serif;
-}
-
-#row1 {
-    position: fixed;
-    padding-top: 7cm;
-    padding-left: 2cm;
-}
-
-#row2 {
-    position: fixed;
-    padding-top: 9cm;
-    padding-left: 2cm;
-}
-
-#row3 {
-    position: fixed;
-    padding-top: 11cm;
-    padding-left: 5cm;
 }
 
 #emailbox {
     font-weight: bolder;
     font-size: large;
-    width: 300px;
+    width: 350px;
     height: 30px;
     opacity: 0.5;
+    padding: 5px;
 }
 
 #pwbox {
     font-weight: bolder;
     font-size: large;
-    width: 300px;
+    width: 350px;
     height: 30px;
     opacity: 0.5;
+    padding: 5px;
 }
 
 #log {
@@ -76,11 +78,6 @@ body {
     cursor: pointer;
 }
 
-.table {
-    padding-left: 6cm;
-    padding-top: 1cm;
-}
-
 .h1 {
     padding-left: 18cm;
     padding-top: 4cm;
@@ -90,9 +87,14 @@ body {
 }
 
 #heading1 {
+    padding-left: 7cm;
+    position: absolute;
     font-size: 50px;
 }
 
 #text {
+    padding-left: 5.5cm;
+    padding-top: 3cm;
+    position: Absolute;
     font-size: 20px;
 }
