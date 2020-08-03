@@ -3,7 +3,7 @@ body, html {
 }
 .bg {
   /* The image used */
-/*  background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/02/13/254396/8af5c9a091ef2402208b555195c53ae2.jpg");*/
+/*background-image: url("https://www.wallpaperup.com/uploads/wallpapers/2014/02/13/254396/8af5c9a091ef2402208b555195c53ae2.jpg");*/
   background-image: url("https://lh3.googleusercontent.com/proxy/1StIIHIXa22Qwa0TX8pUrroy2f9huA-BYabthOfNxcPuSw1rGtmv632iY3LAu8fmKMUwxM_ruhnhSEGCmPhVLgzfd68nRcVgWLrPhKaZApwcdgfAh7NWlp9J5Sh4P2knCiZKEsBIdNV8ARxRgC4Ub9MfzNOizfp6R2OHWKwJavk28b-jeG4BJFXhVaDyeSLoSxXUnMEsLk1igyneqGjnEpMNPAiWGUhwFiqC0dZ7");
   /* Half height */
   height: 100%;
