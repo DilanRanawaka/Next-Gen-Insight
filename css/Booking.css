@@ -1,0 +1,21 @@
+body{
+    background-image: url(room1balcony.jpg);
+    background-size: cover;
+}
+
+
+table{
+    background-color:transparent;
+    color: black;
+    margin-left: 400px;
+    margin-top: 150px;
+    width: 50rem;
+    height: 30rem;
+}
+
+tr.firstrow{
+    background-color: #d4cfd3;
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+}
