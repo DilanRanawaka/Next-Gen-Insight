@@ -67,51 +67,61 @@ body {
 }
 
 #Ifn {
+    z-index: 3000;
     position: absolute;
     padding-left: 2cm;
 }
 
 #Iln {
+    z-index: 5000;
     position: absolute;
     padding-left: 13cm;
 }
 
 #Iemail {
+    z-index: 2000;
     position: absolute;
     padding-left: 2cm;
 }
 
 #Idob {
+    z-index: 2000;
     position: absolute;
     padding-left: 13cm;
 }
 
 #Ipass {
+    z-index: 2000;
     position: absolute;
     padding-left: 2cm;
 }
 
 #code {
+    z-index: 2000;
     position: absolute;
     padding-left: 13cm;
 }
 
 #ICpass {
+    z-index: 2000;
     position: absolute;
     padding-left: 2cm;
 }
 
 #Inic {
+    z-index: 2000;
     position: absolute;
     padding-left: 13cm;
 }
 
 #Ipanum {
+    z-index: 2000;
     position: absolute;
     padding-left: 2cm;
 }
 
 #Icountry {
+    z-index: 2000;
     position: absolute;
     padding-left: 13cm;
 }
