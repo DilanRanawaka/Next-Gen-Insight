@@ -53,7 +53,20 @@ p {
     list-style: square;
 }
 
-.p4 {
+#spaimg {
+    padding-left: 2cm;
+    padding-top: 2cm;
     position: absolute;
-    padding-left: 18cm;
+}
+
+#salonimg {
+    padding-left: 2cm;
+    padding-top: 1cm;
+    position: absolute;
+}
+
+#gymimg {
+    padding-left: 0cm;
+    padding-top: 10cm;
+    position: absolute;
 }

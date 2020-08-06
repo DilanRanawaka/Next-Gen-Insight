@@ -1,14 +1,85 @@
 <!DOCTYPE html>
 <html>
 
-<head></head>
-<link rel="stylesheet" type="text/css" href="css/facilities.css"> </style>
-<title>Sea Side Park Hotel Facilities</title>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Popup container - can be anything you want */
+        
+        .popup {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            padding-left: 18cm;
+            padding-top: 0cm;
+        }
+        /* The actual popup */
+        
+        .popup .popuptext {
+            visibility: hidden;
+            width: 600px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 8px 0;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -80px;
+        }
+        /* Popup arrow */
+        
+        .popup .popuptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        /* Toggle this class - hide and show the popup */
+        
+        .popup .show {
+            visibility: visible;
+            -webkit-animation: fadeIn 1s;
+            animation: fadeIn 1s;
+        }
+        /* Add animation (fade in the popup) */
+        
+        @-webkit-keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+    <script language="javascript" type="text/javascript" src="js/facilities.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/facilities.css"> </style>
+    <title>Sea Side Park Hotel Facilities</title>
 
-<link rel="stylesheet" type="text/css" href="css/newnavbar.css">
-<link rel="stylesheet" type="text/css" href="css/footer.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-<script src="js/newnavbar.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/newnavbar.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="js/newnavbar.js"></script>
 
 </head>
 
@@ -101,115 +172,52 @@
             <li>Conference Hall</li>
             <li>Two Swimming Pools</li>
         </ul>
-    </div><br><br><br><br>
+    </div><br><br>
+    <img id="spaimg" src="images/raphael-lovaski-cJwl8182Mjs-unsplash.jpg" style="height: 400px;width: 700px;">
+    <h2>Senatio Spa</h2>
 
-
-
-    <h1 id="title">Sanatio Spa</h1>
-    <img src="images/raphael-lovaski-cJwl8182Mjs-unsplash.jpg" style="height: 330px;width: 633px;">
-
-    <div style="font-size:19px" class="p4"></div>
-    Our treatments at Spa Ceylon range from full body pampering to signature royal Kandyan massages.<br> Let the scent of lemongrass and the sight of ocean views lead you towards tranquil relaxation. Lavender, <br> ylang-ylang and patchouli will promote
-    that deep restful sleep you crave after an exhausting day.
-
-    <ul style="font-size:19px" class="list-feature">
-        <li>Stunning ocean views</li>
-        <li>Situated 100 metres above the ground</li>
-        <li>Traditional and international spa treatments </li>
-        <li>Steam room and Jacuzzi</li>
-        <li>Five treatment rooms</li>
-    </ul>
+    <div class="popup" onclick="myFunction()">See more
+        <span class="popuptext" id="myPopup">Our treatments at Spa Ceylon range from full body pampering to signature royal Kandyan massages.Let the scent of lemongrass and the sight of ocean views lead you towards tranquil relaxation. Lavender, ylang-ylang and patchouli will promote that deep restful
+    sleep you crave after an exhausting day!</span>
     </div>
 
-    <h1 id="title">Nail spa and salon</h1>
+    <script>
+        // When the user clicks on div, open the popup
+        function myFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 
-    <div class="p5">
-        <img src="images/adam-winger-VjRpkGtS55w-unsplash.jpg" style="height: 330px;width: 633px;">
-        <p>Walk into the calming space of our nail spa, where you can unwind in comfort and pamper yourself with a perfect manicure.<br> There are a wide range of beauty treatments available alongside lovely views of the ocean.</p>
+    <img id="salonimg" src="images/adam-winger-VjRpkGtS55w-unsplash.jpg" style="height: 400px;width: 700px;">
+    <h2>Nail spa and Salon</h2>
 
-        <ul style="font-size:19px" class="list-feature2">
-            <li>Stunning ocean views</li>
-            <li>Situated 100 metres above the ground</li>
-        </ul>
-
-        <h1 id="title">Fitness Centre</h1>
-
-        <img src="images/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg" style="height: 330px;width: 633px;">
-
-
-
-        <div style="font-size:19px" class="gym">
-            Located on the 23rd floor, our fitness centre and gym boasts modern exercise equipment to help rejuvenate and boost your energy levels.<br> Whatever your preference for blowing off steam, we are sure you will enjoy this state-of-the-art wellness
-            facility.
-        </div>
-
-        <ul style="font-size:19px" class="list-feature3">
-            <li>Located on the 23rd floor</li>
-            <li>Ocean views</li>
-            <li>100 metres above the ground </li>
-            <li>Steam room and Jacuzzinbsp</li>
-            <li>Modern equipment</li>
-        </ul>
+    <div class="popup" onclick="AnotherFunction()">See more
+        <span class="popuptext" id="myPopup">Walk into the calming space of our nail spa, where you can unwind in comfort and pamper yourself with a perfect manicure. There are a wide range of beauty treatments available alongside lovely views of the ocean.</span>
     </div>
 
-        <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
-                        <h6>About Sea Side Park</h6>
-                        <p class="text-justify">The epitome of elegance, Sea Side Park presents a combination of convenience and
-                            sleek modern luxury.<br> Located in the heart of Colombo facing the Galle road just five minutes
-                            away from Galle face and the beach. Set in the bustling
-                            business capital amidst irresistible vistas of the Indian Ocean. A refreshing escape for both
-                            business and leisure, our Colombo city hotel combines contemporary comforts of plush accommodation,
-                            fine dining and warm hospitality.
-                        </p>
-                    </div>
-        
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Navigations</h6>
-                        <ul class="footer-links">
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Experiences</a></li>
-                            <li><a href="">Accommodations</a></li>
-                            <li><a href="">Find Reservations</a></li>
-                            <li><a href="">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Address</h6>
-                        <p class="text-justify">226,Galle road,<br>Wallewatta,<br>Colombo,<br>Sri Lanka </p>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Email</h6>
-                        <p class="text-justify">SeaSidePark@gmail.com</p>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Phone</h6>
-                        <p class="text-justify">+112756984</p>
-                    </div>
-                    <div class="col-xs-6 col-md-3">
-                        <h6>Follow us on</h6>
-                        <ul class="footer-links">
-                            <li><img src="https://img.icons8.com/color/35/000000/facebook-new.png" /></li>
-                            <li><img src="https://img.icons8.com/color/35/000000/instagram-new.png" /></li>
-                        </ul>
-                    </div>
-                </div>
-                <hr>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                        <p class="copyright-text">
-                            Copyright &copy; 2020 All Rights Reserved by Next Gen Insight
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+    <script>
+        // When the user clicks on div, open the popup
+        function AnotherFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
+    <img id="gymimg" src="images/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg" style="height: 400px;width: 700px;">
+    <h2>Fitness Center</h2>
 
+    <div class="popup" onclick="ExtraFunction()">See more
+        <span class="popuptext" id="myPopup">Located on the 23rd floor, our fitness centre and gym boasts modern exercise equipment to help rejuvenate and boost your energy levels.<br> Whatever your preference for blowing off steam, we are sure you will enjoy this state-of-the-art wellness
+            facility.</span>
+    </div>
 
+    <script>
+        // When the user clicks on div, open the popup
+        function ExtraFunction() {
+            var popup = document.getElementById("myPopup");
+            popup.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
