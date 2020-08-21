@@ -18,7 +18,7 @@ if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
 
-$sql = "insert into registration (Fname,Lname,Email,Birth,Password,Contact,NIC,Passport,Country) values ($FirstName,$LastName,$Email,$DOB,$Pass,$phone,$NIC,$passport,$Country)";
+$sql = "insert into registration (Fname,Lname,Email,Birth,Password,Contact,NIC,Passport,Country) values ('$FirstName','$LastName','$Email','$DOB','$Pass','$phone','$NIC','$passport','$Country')";
 if(mysqli_query($link, $sql))
 {
     echo "Records inserted successfully.";
