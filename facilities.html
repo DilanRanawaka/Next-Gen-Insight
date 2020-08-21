@@ -4,56 +4,6 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /* Popup container - can be anything you want */
-        
-        .popup {
-            position: relative;
-            display: inline-block;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            padding-left: 18cm;
-            padding-top: 0cm;
-        }
-        /* The actual popup */
-        
-        .popup .popuptext {
-            visibility: hidden;
-            width: 600px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 6px;
-            padding: 8px 0;
-            position: absolute;
-            z-index: 1;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -80px;
-        }
-        /* Popup arrow */
-        
-        .popup .popuptext::after {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            margin-left: -5px;
-            border-width: 5px;
-            border-style: solid;
-            border-color: #555 transparent transparent transparent;
-        }
-        /* Toggle this class - hide and show the popup */
-        
-        .popup .show {
-            visibility: visible;
-            -webkit-animation: fadeIn 1s;
-            animation: fadeIn 1s;
-        }
-        /* Add animation (fade in the popup) */
-        
         @-webkit-keyframes fadeIn {
             from {
                 opacity: 0;
@@ -139,12 +89,12 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <div class="images">
-        <img src="https://www.hotelscombined.com/news/wp-content/uploads/sites/314/2017/05/image-1-GettyImages-528016420-3.jpg" style="height: 300px;width: 500px;">
+        <img src="https://www.hotelscombined.com/news/wp-content/uploads/sites/314/2017/05/image-1-GettyImages-528016420-3.jpg" style="height:300px;width: 500px;">
         <img src="https://www.legrandgalle.lk/wp-content/uploads/2019/02/DSC_0710_HDR.jpg" style="height: 300px;width: 550px;">
         <img src="https://i1.wp.com/signatureweds.com/wp-content/uploads/2017/11/Rosa-and-Dane-The-Wedding-Bliss-Thailand-IAMFLOWER-5.jpg?resize=640%2C480" style="height: 300px;width: 460px;">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/3a/b2/a3/outdoor-swimming-pool.jpg" style="height: 300px;width: 500px;">
-        <img src="https://www.lottehotel.com/content/dam/lotte-hotel/lotte/seoul/convention/meetings/crystal-ballroom/180711-9-2000-con-seoul-hotel.jpg.thumb.768.768.jpg" style="height: 300px;width: 550px;">
-        <img src="https://www.grandecentrepointterminal21.com/upload/fitness/02-fitness.jpg?v=50" style="height: 300px;width: 460px;">
+        <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/3a/b2/a3/outdoor-swimming-pool.jpg" style="padding-top:0.1cm;height: 300px;width: 500px;">
+        <img src="https://www.lottehotel.com/content/dam/lotte-hotel/lotte/seoul/convention/meetings/crystal-ballroom/180711-9-2000-con-seoul-hotel.jpg.thumb.768.768.jpg" style="padding-top:0.1cm;height: 300px;width: 550px;">
+        <img src="https://www.grandecentrepointterminal21.com/upload/fitness/02-fitness.jpg?v=50" style="padding-top:0.1cm;height: 300px;width: 460px;">
     </div>
 
     <div class="desc">
@@ -173,51 +123,8 @@
             <li>Two Swimming Pools</li>
         </ul>
     </div><br><br>
-    <img id="spaimg" src="images/raphael-lovaski-cJwl8182Mjs-unsplash.jpg" style="height: 400px;width: 700px;">
-    <h2>Senatio Spa</h2>
 
-    <div class="popup" onclick="myFunction()">See more
-        <span class="popuptext" id="myPopup">Our treatments at Spa Ceylon range from full body pampering to signature royal Kandyan massages.Let the scent of lemongrass and the sight of ocean views lead you towards tranquil relaxation. Lavender, ylang-ylang and patchouli will promote that deep restful
-    sleep you crave after an exhausting day!</span>
-    </div>
 
-    <script>
-        // When the user clicks on div, open the popup
-        function myFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-        }
-    </script>
-
-    <img id="salonimg" src="images/adam-winger-VjRpkGtS55w-unsplash.jpg" style="height: 400px;width: 700px;">
-    <h2>Nail spa and Salon</h2>
-
-    <div class="popup" onclick="AnotherFunction()">See more
-        <span class="popuptext" id="myPopup">Walk into the calming space of our nail spa, where you can unwind in comfort and pamper yourself with a perfect manicure. There are a wide range of beauty treatments available alongside lovely views of the ocean.</span>
-    </div>
-
-    <script>
-        // When the user clicks on div, open the popup
-        function AnotherFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-        }
-    </script>
-    <img id="gymimg" src="images/humphrey-muleba-LOA2mTj1vhc-unsplash.jpg" style="height: 400px;width: 700px;">
-    <h2>Fitness Center</h2>
-
-    <div class="popup" onclick="ExtraFunction()">See more
-        <span class="popuptext" id="myPopup">Located on the 23rd floor, our fitness centre and gym boasts modern exercise equipment to help rejuvenate and boost your energy levels.<br> Whatever your preference for blowing off steam, we are sure you will enjoy this state-of-the-art wellness
-            facility.</span>
-    </div>
-
-    <script>
-        // When the user clicks on div, open the popup
-        function ExtraFunction() {
-            var popup = document.getElementById("myPopup");
-            popup.classList.toggle("show");
-        }
-    </script>
 </body>
 
 </html>
