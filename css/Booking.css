@@ -1,21 +1,23 @@
 body{
-    background-image: url(room1balcony.jpg);
+    background-image: url(booking.jpg);
     background-size: cover;
 }
 
 
 table{
-    background-color:transparent;
+    background-color: white;
+    opacity: 75%;
     color: black;
-    margin-left: 400px;
+    margin-left: 300px;
+    margin-right: 300px;
     margin-top: 150px;
-    width: 50rem;
-    height: 30rem;
+    width: 60rem;
+    height: 40rem;
 }
 
 tr.firstrow{
-    background-color: #d4cfd3;
-    color: black;
+    background-color: black;
+    color: white;
     font-weight: bolder;
     text-align: center;
 }
