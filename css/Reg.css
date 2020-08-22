@@ -23,30 +23,35 @@ body {
 }
 
 .row1 {
+    z-index: 4000;
     position: fixed;
     padding-top: 2cm;
     padding-left: 3cm;
 }
 
 .row2 {
+    z-index: 4000;
     position: fixed;
     padding-top: 5cm;
     padding-left: 1cm;
 }
 
 .row3 {
+    z-index: 4000;
     position: fixed;
     padding-top: 7cm;
     padding-left: 1cm;
 }
 
 .row4 {
+    z-index: 4000;
     position: fixed;
     padding-top: 9cm;
     padding-left: 1cm;
 }
 
 .row5 {
+    z-index: 4000;
     position: fixed;
     padding-top: 11cm;
     padding-left: 1cm;
@@ -61,58 +66,64 @@ body {
 }
 
 .row7 {
+    z-index: 4000;
     position: fixed;
     padding-top: 14cm;
     padding-left: 1cm;
 }
 
 #Ifn {
-    position: absolute;
+    z-index: 4000;
+    position: fixed;
     padding-left: 2cm;
 }
 
 #Iln {
-    position: absolute;
+    position: fixed;
     padding-left: 13cm;
 }
 
 #Iemail {
-    position: absolute;
+    z-index: 4000;
+    position: fixed;
     padding-left: 2cm;
 }
 
 #Idob {
-    position: absolute;
+    position: fixed;
     padding-left: 13cm;
 }
 
 #Ipass {
-    position: absolute;
+    z-index: 4000;
+    position: fixed;
     padding-left: 2cm;
 }
 
 #code {
-    position: absolute;
+    position: fixed;
     padding-left: 13cm;
 }
 
 #ICpass {
-    position: absolute;
+    z-index: 4000;
+    position: fixed;
     padding-left: 2cm;
 }
 
 #Inic {
-    position: absolute;
+    position: fixed;
     padding-left: 13cm;
 }
 
 #Ipanum {
-    position: absolute;
+    z-index: 4000;
+    position: fixed;
     padding-left: 2cm;
 }
 
 #Icountry {
-    position: absolute;
+    position: fixed;
     padding-left: 13cm;
 }
 
@@ -220,7 +231,7 @@ body {
 
 #head {
     position: fixed;
-    padding-left: 27cm;
+    padding-left: 25cm;
     padding-top: 4cm;
     font-family: "BodoniStd-BookItalic, serif";
     font-size: 35px;
@@ -230,7 +241,7 @@ body {
 
 #body1 {
     position: fixed;
-    padding-left: 27cm;
+    padding-left: 25cm;
     padding-top: 6.5cm;
     text-align: justify;
     font-size: 18px;
@@ -238,7 +249,7 @@ body {
 
 #body2 {
     position: fixed;
-    padding-left: 26cm;
+    padding-left: 25cm;
     padding-top: 9cm;
     text-align: justify;
     font-size: 18px;
@@ -254,7 +265,7 @@ body {
 
 #body4 {
     position: fixed;
-    padding-left: 24cm;
+    padding-left: 25cm;
     padding-top: 13cm;
     text-align: justify;
     font-size: 18px;

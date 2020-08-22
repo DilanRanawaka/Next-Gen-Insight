@@ -17,12 +17,14 @@ body {
 }
 
 .email {
+    z-index: 2000;
     position: fixed;
     padding-top: 8.5cm;
     padding-left: 7.5cm;
 }
 
 .pass {
+    z-index: 1000;
     position: fixed;
     padding-top: 10.5cm;
     padding-left: 7.5cm;

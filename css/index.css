@@ -1,6 +1,6 @@
 .section {
     position: relative;
-    height: 100vh;
+    height: 35vh;
 }
 
 .section .section-center {
@@ -126,9 +126,13 @@
 }
 
 .next {
-    padding-left: 3cm;
     padding-top: 1cm;
-    text-align: center;
     font-family: "BodoniStd-BookItalic, serif";
     font-size: 50px;
+}
+
+#titlexx {
+    font-family: "BodoniStd-BookItalic, serif";
+    font-size: 50px;
+    text-align: left;
 }
