@@ -1,6 +1,15 @@
 function validateform()
-{	if(document.form1.card.value.length==0)
+{	
+	if(document.form1.card.value.length==0)
 	{	alert("Please enter the name in your card");
+		return;	
+	}
+	if(document.form1.cardno.value.length==0)
+	{	alert("Please enter the credit card number");
+		return;	
+	}
+	if(document.form1.pinnum.value.length==0)
+	{	alert("Please enter the pin");
 		return;	
 	}
 
@@ -33,5 +42,7 @@ function validateform()
 	{
 		alert("You have to agree the terms and conditions!!")
 		return;
-    }
+	}
+
+
 }
