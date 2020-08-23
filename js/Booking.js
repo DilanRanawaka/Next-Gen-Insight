@@ -33,4 +33,5 @@ function validateform()
 	{
 		alert("You have to agree the terms and conditions!!")
 		return;
-	}
+    }
+}
