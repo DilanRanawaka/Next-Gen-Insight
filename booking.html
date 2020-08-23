@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="css/Booking.css">
+    <link rel="stylesheet" type="text/css" href="php/booking.php">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script language="javascript" type="text/javascript" src="js/Booking.js"></script>
     <title>Sea Side South Park Hotel</title>
@@ -67,7 +67,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
     <section id="sectionA">
-        <form name= form1>
+        <form name="form1" method="POST" action="booking.php">
             <table>
                 <tr class="firstrow">
                     <td colspan="4">
@@ -77,9 +77,9 @@
 
                 <tr>
                     <td><b>Check in</b>
-                        <input class="form-control" type="date"></td>
+                        <input class="form-control" type="date" name="INdate" required></td>
                     <td><b>Check out</b>
-                        <input class="form-control" type="date"></td>
+                        <input class="form-control" type="date" name="OUTdate" required></td>
                     <td><b>Accepted Cards</b></td>
                     <td>
                         <div class="icon-container">
@@ -98,26 +98,26 @@
                     <td><b>Room type</b></td>
                     <td><select id="room1" name="roomtype">
                         <option value="Room">Select the type of the room</option>
-                        <option value="Room">Single Room</option>
-                        <option value="Room">Twin Room</option>
-                        <option value="Room">Triple Room</option>
-                        <option value="Room">Queen Room</option>
+                        <option value=" Single Room">Single Room</option>
+                        <option value="Twin Room">Twin Room</option>
+                        <option value="Triple Room">Triple Room</option>
+                        <option value="Queen Room">Queen Room</option>
                     </select></td>
                     <td>
                         <b>Name on the card</b>
                     </td>
-                    <td><input type="text" name="card"></td>
+                    <td><input type="text" name="cardname"></td>
 
                 </tr>
                 <tr>
                     <td><b>Number of rooms</b></td>
                     <td><select id="room2" name="nroom">
                         <option value="Roomno">Select the no.of rooms</option>
-                        <option value="Roomno">1</option>
-                        <option value="Roomno">2</option>
-                        <option value="Roomno">3</option>
-                        <option value="Roomno">4</option>
-                        <option value="Roomno">5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select></td>
                     <td><b>Credit Card Number</b>
                     </td>
@@ -128,12 +128,11 @@
                     <td><b>Number of adults</b></td>
                     <td><select id="adults" name="nadults">
                         <option value="adult">no.of adults</option>
-                        <option value="adult">0</option>
-                        <option value="adult">1</option>
-                        <option value="adult">2</option>
-                        <option value="adult">3</option>
-                        <option value="adult">4</option>
-                        <option value="adult">5</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
                     </td>
                     <td><b>PIN Number</b></td>
@@ -142,12 +141,12 @@
                         <td><b>Number of children</b></td>
                         <td><select id="children" name="nchildren">
                         <option value="child">no.of children</option>
-                        <option value="child">0</option>
-                        <option value="child">1</option>
-                        <option value="child">2</option>
-                        <option value="child">3</option>
-                        <option value="child">4</option>
-                        <option value="child">5</option>
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </td>
                     <td><b>Expiry date of the card</b></td>
                     <td><input type="date" name="expdate"></td>
@@ -158,7 +157,7 @@
                     <td colspan="2"><input type="checkbox" name="ncheck"> I agree to the below terms and conditions mentioned <a href="#sectionB">Terms & Conditions</a></td>
                 </tr>
                 <tr>
-                   <td> <input type="button" name="submit" value="Submit" class="button1" onclick="validateform()"> </td>
+                   <td> <input type="submit" name="submit" value="Book Now" class="button1" onclick="validateform()"> </td>
                 </tr>
 
             </table>
