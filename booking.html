@@ -1,32 +1,98 @@
 <html>
-    <head>
-        <link rel = "stylesheet" type = "text/css" href="css/Booking.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script language = "javascript" type= "text/javascript" src = "js/Booking.js"></script>
-                
-        <title> </title>
-    </head>
-    <body>
-        <section id="sectionA">
-        <form name = form1>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/Booking.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script language="javascript" type="text/javascript" src="js/Booking.js"></script>
+    <title>Sea Side South Park Hotel</title>
+
+    <link rel="stylesheet" type="text/css" href="css/newnavbar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="js/newnavbar.js"></script>
+    <title> </title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar">
+        <a class="navbar-brand" href="#">
+            <!-- <img src="images/logo00.jpg" width="60" height="60" alt="" loading="lazy"> -->
+        </a>
+        <a class="navbar-brand name" href="#">Sea Side Park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+        <div class="collapse navbar-collapse box" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto list">
+                <li class="nav-item active">
+                    <a class="nav-link" href="Index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="map.html">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Roompagehome.html">Accommodations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="facilities.html">Facilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="booking.html">Find Reservation<span class="sr-only">(current)</span></a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Multiple Hotel
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Gallery</a>
+                    <a class="dropdown-item" href="#">Hotel Facilities</a>
+                    <a class="dropdown-item" href="#">Map</a>
+                  </div>
+                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link" href="contactus.html">Contact Us</a>
+                </li>
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-primary my-2 my-sm-0 btnLogin" formaction="log.html" type="submit">Login</button>
+                <button class="btn btn-primary my-2 my-sm-0 btnSignup" formaction="Reg.html" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <section id="sectionA">
+        <form name=f orm1>
             <table>
                 <tr class="firstrow">
-                    <td colspan="4"><h1>Your Bookings</h1></td>
+                    <td colspan="4">
+                        <h1>Your Bookings</h1>
+                    </td>
                 </tr>
-                
+
                 <tr>
                     <td><b>Check in</b>
-                    <input class="form-control" type="date"></td>
+                        <input class="form-control" type="date"></td>
                     <td><b>Check out</b>
-                    <input class="form-control" type="date"></td>
+                        <input class="form-control" type="date"></td>
                     <td><b>Accepted Cards</b></td>
                     <td>
                         <div class="icon-container">
+                            <input type="radio" name="cardtype" value="VISA">
                             <i class="fa fa-cc-visa" style="color:navy;"></i>
+                            <input type="radio" name="cardtype" value="AMEX">
                             <i class="fa fa-cc-amex" style="color:blue;"></i>
+                            <input type="radio" name="cardtype" value="American Express">
                             <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                            <input type="radio" name="cardtype" value="Discover">
                             <i class="fa fa-cc-discover" style="color:orange;"></i>
-                          </div></td>
+                        </div>
+                    </td>
                 </tr>
                 <tr>
                     <td><b>Room type</b></td>
@@ -41,7 +107,7 @@
                         <b>Name on the card</b>
                     </td>
                     <td><input type="text" name="card"></td>
-                    
+
                 </tr>
                 <tr>
                     <td><b>Number of rooms</b></td>
@@ -72,9 +138,9 @@
                     </td>
                     <td><b>PIN Number</b></td>
                     <td><input type="text" name="pinnum"></td>
-                <tr>
-                    <td><b>Number of children</b></td>
-                    <td><select id="children" name="nchildren">
+                    <tr>
+                        <td><b>Number of children</b></td>
+                        <td><select id="children" name="nchildren">
                         <option value="child">no.of children</option>
                         <option value="child">0</option>
                         <option value="child">1</option>
