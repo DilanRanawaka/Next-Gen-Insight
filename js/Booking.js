@@ -44,5 +44,4 @@ function validateform()
 		return;
 	}
 
-
 }
