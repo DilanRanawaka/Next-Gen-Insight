@@ -1,8 +1,8 @@
 <html>
     <head>
-        <link rel = "stylesheet" type = "text/css" href="css/Booking.css">
+        <link rel = "stylesheet" type = "text/css" href="Booking.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script language = "javascript" type= "text/javascript" src = "js/Booking.js"></script>
+        <script language = "javascript" type= "text/javascript" src = "Booking.js"></script>
                 
         <title> </title>
     </head>
@@ -37,7 +37,9 @@
                         <option value="Room">Triple Room</option>
                         <option value="Room">Queen Room</option>
                     </select></td>
-                    <td><b>Name on the card<b></b></td>
+                    <td>
+                        <b>Name on the card</b>
+                    </td>
                     <td><input type="text" name="card"></td>
                     
                 </tr>
@@ -51,11 +53,13 @@
                         <option value="Roomno">4</option>
                         <option value="Roomno">5</option>
                     </select></td>
-                    <td><b>Credit Card Number</b></td>
-                    <td><input type="text" name="cardno"></td>
+                    <td><b>Credit Card Number</b>
+                    </td>
+                    <td><input type="text" name="cardno">
+                    </td>
                 </tr>
                 <tr>
-                    <td><b>Number of members</b></td>
+                    <td><b>Number of adults</b></td>
                     <td><select id="adults" name="nadults">
                         <option value="adult">no.of adults</option>
                         <option value="adult">0</option>
@@ -65,7 +69,12 @@
                         <option value="adult">4</option>
                         <option value="adult">5</option>
                     </select>
-                    <select id="children" name="nchildren">
+                    </td>
+                    <td><b>PIN Number</b></td>
+                    <td><input type="text" name="pinnum"></td>
+                <tr>
+                    <td><b>Number of children</b></td>
+                    <td><select id="children" name="nchildren">
                         <option value="child">no.of children</option>
                         <option value="child">0</option>
                         <option value="child">1</option>
