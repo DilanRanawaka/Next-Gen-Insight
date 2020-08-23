@@ -44,4 +44,10 @@ function validateform()
 		return;
 	}
 
+	if((!document.form1.cardtype[0].checked) && (!document.form1.cardtype[1].checked)&& (!document.form1.cardtype[2].checked)&& (!document.form1.cardtype[3].checked))
+	{	alert("Select the card you wish to pay");
+		return;	
+	}
+
+
 }
