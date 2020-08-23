@@ -43,11 +43,19 @@ function validateform()
 		alert("You have to agree the terms and conditions!!")
 		return;
 	}
-	
+
 	if((!document.form1.cardtype[0].checked) && (!document.form1.cardtype[1].checked)&& (!document.form1.cardtype[2].checked)&& (!document.form1.cardtype[3].checked))
-	{	alert("Select a type of room");
+	{	alert("Select the card you wish to pay");
 		return;	
 	}
+
+	
+	if(document.form1.expdate.selectedIndex==0)
+	{
+		alert("Please select a date")
+		return;
+	}
+
 
 
 }
