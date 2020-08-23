@@ -49,13 +49,5 @@ function validateform()
 		return;	
 	}
 
-	
-	if(document.form1.expdate.selectedIndex==0)
-	{
-		alert("Please select a date")
-		return;
-	}
-
-
 
 }
