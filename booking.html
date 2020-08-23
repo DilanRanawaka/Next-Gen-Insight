@@ -2,11 +2,12 @@
     <head>
         <link rel = "stylesheet" type = "text/css" href="css/Booking.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script language = "javascript" type= "text/javascript" src = "js/Booking.js"></script>
                 
         <title> </title>
     </head>
     <body>
-        <div class="class1">
+        <section id="sectionA">
         <form name = form1>
             <table>
                 <tr class="firstrow">
@@ -57,6 +58,7 @@
                     <td><b>Number of members</b></td>
                     <td><select id="adults" name="nadults">
                         <option value="adult">no.of adults</option>
+                        <option value="adult">0</option>
                         <option value="adult">1</option>
                         <option value="adult">2</option>
                         <option value="adult">3</option>
@@ -65,25 +67,55 @@
                     </select>
                     <select id="children" name="nchildren">
                         <option value="child">no.of children</option>
+                        <option value="child">0</option>
                         <option value="child">1</option>
                         <option value="child">2</option>
                         <option value="child">3</option>
                         <option value="child">4</option>
-                        <option value="child">5</option></td>
+                        <option value="child">5</option>
+                    </td>
+                    <td><b>Expiry date of the card</b></td>
+                    <td><input type="date" name="expdate"></td>
                 </tr>
 
                 <tr>
                     
-                    <td colspan="2"><input type="checkbox" name="">I agree to the below terms and conditions mentioned <a href="#">Terms & Conditions</a></td>
+                    <td colspan="2"><input type="checkbox" name="ncheck"> I agree to the below terms and conditions mentioned <a href="#sectionB">Terms & Conditions</a></td>
                 </tr>
                 <tr>
-                   <td> <input type="button" name="submit" value="Submit" onclick="validateform()"> </td>
+                   <td> <input type="button" name="submit" value="Submit" class="button1" onclick="validateform()"> </td>
                 </tr>
 
             </table>
             
         </form>
-        </div>
+        </section>
+        <section id="sectionB">
+            <table class="table1">
+                <tr>
+                    <td colspan="2"><h1 class="terms">Terms & Conditions</h1></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <ul class="policy">
+                            <li>By using this Website to make reservations with a Hotel, you agree to be bound by all of such Hotel’s standard terms and conditions and by any other policies, terms and conditions that may apply.</li>
+                            <li>By using this Website to make reservations, you hereby authorize the Hotel and us to use your personal information including credit/ debit card information that you provide to us for the purpose of the reservation.    </li>
+                            <li>You may only make reservations through this Website for yourself and your guests. If you intend to book more than nine (5) rooms at the same Hotel for the same period of stay on behalf of one or more guests, you must contact the Hotel directly to make the reservation. </li>
+                            <li>You must provide valid credit/ debit card information (such as card type, card number, expiry date and the full name shown on the card) to us and to the Hotel to secure your reservation or to pay an advance deposit for prepaid or advance purchases. No payment will be deducted from your credit/ debit card at the time of reservation unless it is for prepayment or advance purchase.  </li>
+                            <li>Where applicable, you may charge the purchase of goods and services including food and beverage, spa services or other Hotel activities to your room during your stay. You are personally liable for the full payment of all such charges which may include any applicable service charges, duties, taxes, or tariffs. You are required to pay and settle all such charges fully upon receipt of the Hotel bill or during check-out.</li>
+                            <li>All payments made by you are subject to your respective bank’s charges for foreign transaction fees, where applicable. Additional foreign exchange fees may also apply if any other currency, which is not from your originating issued card’s country, is selected to be charged.</li>
+                            <li>You are advised not to bring expensive jewellery, precious goods or excessive amounts of cash onto the Hotel premises and you do so at your own risk.</li>
+                            <li>We respect your privacy and are committed to protecting the privacy, confidentiality and security of the personal data you provide to us or that we otherwise collect about you when you use this Website.</li>
+                            <li><a href="#sectionA">Go back to the Booking form</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+
+            </table>
+        </section>
         
     </body>
 </html>
