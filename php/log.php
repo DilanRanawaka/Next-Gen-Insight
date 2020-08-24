@@ -19,8 +19,16 @@ $email=$_REQUEST['email'];
 	}
 	else
 	{
-		echo "Sorry! you are not a registered user. Please sign in";
+		echo "<h1 align=center>Sorry! you are not a registered user. Please sign in</h1><br>";
 	}
 
 mysqli_close($conn);
 ?>
+
+<html>
+<head>
+</head>
+<body>
+<button href="index.html">Back to Home Page</button>
+</body>
+</html>
