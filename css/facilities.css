@@ -9,6 +9,12 @@ h1 {
     font-family: "Lucida Console", Courier, monospace;
 }
 
+body {
+    background-color: wheat;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .desc {
     position: relative;
     padding-left: 7cm;
@@ -22,12 +28,10 @@ h2 {
 
 p {
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 300px;
 }
 
 #p2 {
     font-family: Arial, Helvetica, sans-serif;
-    margin-left: 300px;
 }
 
 .room-features-inner {
@@ -35,32 +39,16 @@ p {
     padding-top: 1cm;
 }
 
-.list-feature {
-    list-style: square;
+.desc {
+    padding-left: 14cm;
 }
 
-.list-feature2 {
-    list-style: square;
+.container2 {
+    margin-left: 2cm;
+    margin-right: 2cm;
 }
 
-.list-feature3 {
-    list-style: square;
-}
-
-#spaimg {
-    padding-left: 2cm;
-    padding-top: 2cm;
-    position: absolute;
-}
-
-#salonimg {
-    padding-left: 2cm;
-    padding-top: 1cm;
-    position: absolute;
-}
-
-#gymimg {
-    padding-left: 0cm;
-    padding-top: 10cm;
-    position: absolute;
+.container1 {
+    margin-left: 1cm;
+    margin-right: 1cm;
 }
