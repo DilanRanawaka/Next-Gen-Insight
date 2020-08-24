@@ -15,7 +15,7 @@ if($link === false){
 $sql = "insert into Feedback (Name,Email,Message) values ('$Name','$Email','$Message')";
 if(mysqli_query($link, $sql))
 {
-    echo "Message sent successfully.";
+    echo "<h1 align=center>Your Message was sent successfully.</h1>";
 } 
 else
 {
@@ -24,3 +24,10 @@ else
 
 mysqli_close($link);
 ?>
+<html>
+<head>
+</head>
+<body>
+<form action="index.html"><input type="submit" value="Back to Home Page"/></form>
+</body>
+</html>

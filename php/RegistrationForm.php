@@ -21,7 +21,8 @@ if($link === false){
 $sql = "insert into registration (Fname,Lname,Email,Birth,Password,Contact,NIC,Passport,Country) values ('$FirstName','$LastName','$Email','$DOB','$Pass','$phone','$NIC','$passport','$Country')";
 if(mysqli_query($link, $sql))
 {
-    echo "Records inserted successfully.";
+    echo "<h1 align=center>Welcome ".$FirstName. " " .$LastName." to Sea Side Park Hotels</h1><h2 align=center>Thank you for connecting with us</h2>
+    <form action=index.html><input type=submit value=ExploreMore></form>";
 } 
 else
 {
@@ -30,4 +31,3 @@ else
 
 mysqli_close($link);
 ?>
-

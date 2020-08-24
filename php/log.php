@@ -29,6 +29,6 @@ mysqli_close($conn);
 <head>
 </head>
 <body>
-<button href="index.html">Back to Home Page</button>
+<form action="index.html"><input type="submit" value="Back to Home Page"/></form>
 </body>
 </html>

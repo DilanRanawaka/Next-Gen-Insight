@@ -15,11 +15,12 @@ $IN=$_REQUEST['CheckIN'];
     $rowcount = mysqli_num_rows($rs);
 	if($rowcount>1)
 	{
-		echo "<h1 align=center>Sorry! The hotel is not available at the moment</h1>";
+		echo "<h1 align=center>Sorry! The hotel is not available at the moment</h1><form action=index.html><input type=submit value=BacktoHomePage></form>";
 	}
 	else
 	{
-		echo "<h1 align=center>Congratz! Pick out your stay now </h1>";
+		echo "<h1 align=center>Congratz! Pick out your stay now </h1><form action=Roompagehome.html><input type=submit value=ExploreAccomodations></form>";
+
 	}
 
 mysqli_close($conn);
