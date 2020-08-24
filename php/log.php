@@ -56,8 +56,8 @@ mysqli_close($conn);
 </style>
 </head>
 
+<body background="https://images.squarespace-cdn.com/content/v1/5d5b301d8c20010001f8932c/1566589751051-V153KAJN14GML99WSS05/ke17ZwdGBToddI8pDm48kCDnvzZDSTqrZYB0qToMReZ7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0psyQQR5KrxgIm8QcotvsYtvUHnJsni5ivcu2RP0UO8zWN1uCXtq4fHLhtl5lYmmpQ/Light+Theme+Website+Background.jpg?format=2500w">
 
-<body>
 <form action="index.html"><input type="submit" class = btnSubmit value="Back to Home Page"/></form>
 </body>
 </html>
