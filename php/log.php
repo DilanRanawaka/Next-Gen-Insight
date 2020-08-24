@@ -25,10 +25,39 @@ $email=$_REQUEST['email'];
 mysqli_close($conn);
 ?>
 
+
 <html>
 <head>
+<style>
+
+.btnSubmit {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  align-items: center;
+  }
+
+.btnSubmit:hover {background-color: #3e8e41}
+
+.btnSubmit:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
 </head>
+
+
 <body>
-<form action="index.html"><input type="submit" value="Back to Home Page"/></form>
+<form action="index.html"><input type="submit" class = btnSubmit value="Back to Home Page"/></form>
 </body>
 </html>
