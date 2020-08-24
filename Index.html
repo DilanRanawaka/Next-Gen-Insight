@@ -66,8 +66,8 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button class="btn btn-primary my-2 my-sm-0 btnLogin" type="submit" formaction="log.html">Login</button>
-                <button class="btn btn-primary my-2 my-sm-0 btnSignup" type="submit" formaction="Reg.html">Sign Up</button>
+                <button class="btn btn-primary my-2 my-sm-0 btnLogin" type="submit" formaction="log.html" formtarget="_blank">Login</button>
+                <button class="btn btn-primary my-2 my-sm-0 btnSignup" type="submit" formaction="Reg.html" formtarget="_blank">Sign Up</button>
             </form>
         </div>
     </nav>
@@ -101,7 +101,7 @@
             <div class="container">
                 <div class="row">
                     <div class="booking-form">
-                        <form>
+                        <form method="POST" name="form" action="php/index.php">
                             <div class="row no-margin">
                                 <div class="col-md-3">
                                     <div class="form-header">
@@ -113,24 +113,24 @@
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <span class="form-label">Check In</span>
-                                                <input class="form-control" type="date" required>
+                                                <input class="form-control" name="CheckIN" type="date" required>
                                             </div>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="form-group">
                                                 <span class="form-label">Check out</span>
-                                                <input class="form-control" type="date" required>
+                                                <input class="form-control" name="CheckOUT" type="date" required>
                                             </div>
                                         </div>
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <span class="form-label">Guests</span>
-                                                <select class="form-control">
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>3</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
+                                                <select class="form-control" name="Adults">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
                                                 </select>
                                                 <span class="select-arrow"></span>
                                             </div>
@@ -138,12 +138,12 @@
                                         <div class="col-md-2">
                                             <div class="form-group">
                                                 <span class="form-label">Kids</span>
-                                                <select class="form-control">
-                                                    <option>0</option>
-                                                    <option>1</option>
-                                                    <option>2</option>
-                                                    <option>4</option>
-                                                    <option>5</option>
+                                                <select class="form-control" name="Children">
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
                                                 </select>
                                                 <span class="select-arrow"></span>
                                             </div>
@@ -162,96 +162,90 @@
             </div>
         </div>
     </div>
-<div class="about_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-5">
-                <div class="about_info">
-                    <div class="section_title mb-20px">
-                        <span>Accommodations</span>
-                        <h3>A Hotel <br>
-                            with Luxuries Rooms</h3>
-                    </div>
-                    <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                        dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                        sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                    <a href="Roompagehome.html" class="line-button">Learn More</a>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-7">
-                <div class="about_thumb d-flex">
-                    <div class="img_1">
-                        <img src="images/home/about_2.png" alt="">
-                    </div>
-                    <div class="img_2">
-                        <img src="images/home/r1.jpg" alt="">
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <span>Accommodations</span>
+                            <h3>A Hotel <br> with Luxuries Rooms</h3>
+                        </div>
+                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat facilisi
+                            faucibus et. Rhoncus.</p>
+                        <a href="Roompagehome.html" class="line-button">Learn More</a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br>
-<div class="about_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-7 col-lg-7">
-                <div class="about_thumb2 d-flex">
-                    <div class="img_1">
-                        <img src="images/home/f1.jpg" alt="">
-                    </div>
-                    <div class="img_2">
-                        <img src="images/home/f2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-5 col-lg-5">
-                <div class="about_info">
-                    <div class="section_title mb-20px">
-                        <span>Facilities</span>
-                        <h3>We have
-                            lots of facilities
-                        </h3>
-                    </div>
-                    <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                        dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                        sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                    <a href="facilities.html" class="line-button">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<br>
-<div class="about_area">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-5 col-lg-5">
-                <div class="about_info">
-                    <div class="section_title mb-20px">
-                        <span>Experiences</span>
-                        <h3>Experieces <br>
-                            around the city</h3>
-                    </div>
-                    <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare
-                        dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque
-                        sollicitudin enim. Dapibus lorem feugiat facilisi faucibus et. Rhoncus.</p>
-                    <a href="map.html" class="line-button">Learn More</a>
-                </div>
-            </div>
-            <div class="col-xl-7 col-lg-7">
-                <div class="about_thumb d-flex">
-                    <div class="img_1">
-                        <img src="images/home/e1.jpg" alt="">
-                    </div>
-                    <div class="img_2">
-                        <img src="images/home/e2.jpg" alt="">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about_thumb d-flex">
+                        <div class="img_1">
+                            <img src="images/home/about_2.png" alt="">
+                        </div>
+                        <div class="img_2">
+                            <img src="images/home/r1.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <br>
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about_thumb2 d-flex">
+                        <div class="img_1">
+                            <img src="images/home/f1.jpg" alt="">
+                        </div>
+                        <div class="img_2">
+                            <img src="images/home/f2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <span>Facilities</span>
+                            <h3>We have lots of facilities
+                            </h3>
+                        </div>
+                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat facilisi
+                            faucibus et. Rhoncus.</p>
+                        <a href="facilities.html" class="line-button">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="about_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-5">
+                    <div class="about_info">
+                        <div class="section_title mb-20px">
+                            <span>Experiences</span>
+                            <h3>Experieces <br> around the city</h3>
+                        </div>
+                        <p>Suscipit libero pretium nullam potenti. Interdum, blandit phasellus consectetuer dolor ornare dapibus enim ut tincidunt rhoncus tellus sollicitudin pede nam maecenas, dolor sem. Neque sollicitudin enim. Dapibus lorem feugiat facilisi
+                            faucibus et. Rhoncus.</p>
+                        <a href="map.html" class="line-button">Learn More</a>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-lg-7">
+                    <div class="about_thumb d-flex">
+                        <div class="img_1">
+                            <img src="images/home/e1.jpg" alt="">
+                        </div>
+                        <div class="img_2">
+                            <img src="images/home/e2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <br>
     <footer class="site-footer">
         <div class="container">
